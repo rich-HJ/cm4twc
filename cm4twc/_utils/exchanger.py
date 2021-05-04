@@ -64,8 +64,13 @@ class Exchanger(object):
         # set up each transfer
         for t in self.transfers:
             histories = []
-            shape = self.transfers[t]['src_sd'].shape
-
+##            shape = self.transfers[t]['src_sd'].shape
+## richE line changed inline with slack chat with Thibault
+## exchanger now only accepts 2d arrays 
+##
+            shape = self.transfers[t]['src_sd'].shape[1:] if 'Z' in self.transfers[t]['src_sd'].axes else self.transfers[t]['src_sd'].shape
+##
+##
             # special case for transfers towards a DataComponent or
             # a NullComponent (or towards outside framework, which will
             # remain possible until Ocean and Atmosphere components are

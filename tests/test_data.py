@@ -1,3 +1,4 @@
+
 import unittest
 import doctest
 
@@ -6,8 +7,8 @@ import cm4twc
 
 def get_sciencish_dataset():
     return cm4twc.DataSet(
-        ['data/dummy_driving_data.nc',
-         'data/dummy_ancillary_data.nc'],
+        ['/home/users/rjellis/hydro_jules/cm4twc/tests/data/dummy_driving_data.nc',
+         '/home/users/rjellis/hydro_jules/cm4twc/tests/data/dummy_ancillary_data.nc'],
         name_mapping={'rainfall_flux': 'rainfall',
                       'snowfall_flux': 'snowfall',
                       'air_temperature': 'air_temperature',
@@ -17,7 +18,7 @@ def get_sciencish_dataset():
 
 def get_dummy_dataset(component_category, time_res, space_res):
     return cm4twc.DataSet(
-        'data/dummy_{}_data_{}_{}.nc'.format(component_category, time_res,
+        '/home/users/rjellis/hydro_jules/cm4twc/tests/data/dummy_{}_data_{}_{}.nc'.format(component_category, time_res,
                                              space_res)
     )
 
@@ -25,7 +26,7 @@ def get_dummy_dataset(component_category, time_res, space_res):
 def get_dummy_component_substitute_dataset(component_category, time_res,
                                            space_res):
     return cm4twc.DataSet(
-        'data/dummy_{}_substitute_data_{}_{}.nc'.format(component_category,
+        '/home/users/rjellis/hydro_jules/cm4twc/tests/data/dummy_{}_substitute_data_{}_{}.nc'.format(component_category,
                                                         time_res, space_res)
     )
 

@@ -26,16 +26,16 @@ surfacelayer:
     grid_north_pole_longitude: 190.0
   dataset:
     air_temperature:
-      files: [data/sciencish_driving_data_daily.nc]
+      files: [/home/users/rjellis/hydro_jules/cm4twc/tests/data/sciencish_driving_data_daily.nc]
       select: air_temperature
     rainfall:
-      files: [data/sciencish_driving_data_daily.nc]
+      files: [/home/users/rjellis/hydro_jules/cm4twc/tests/data/sciencish_driving_data_daily.nc]
       select: rainfall_flux
     snowfall:
-      files: [data/sciencish_driving_data_daily.nc]
+      files: [/home/users/rjellis/hydro_jules/cm4twc/tests/data/sciencish_driving_data_daily.nc]
       select: snowfall_flux
     vegetation_fraction:
-      files: [data/sciencish_ancillary_data.nc]
+      files: [/home/users/rjellis/hydro_jules/cm4twc/tests/data/sciencish_ancillary_data.nc]
       select: vegetation_fraction
   parameters: null
   constants: null
@@ -65,7 +65,7 @@ subsurface:
     grid_north_pole_longitude: 190.0
   dataset:
     soil_temperature:
-      files: [data/sciencish_driving_data_daily.nc]
+      files: [/home/users/rjellis/hydro_jules/cm4twc/tests/data/sciencish_driving_data_daily.nc]
       select: soil_temperature
   parameters:
     saturation_capacity: 600
